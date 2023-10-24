@@ -30,14 +30,14 @@ btnAddTitle.addEventListener("click",()=>{
 //----------------------------------------------------
 const btn = document.getElementById("btn")
 btn.addEventListener("click",()=>{
-  const content_inp = document.getElementById("content")
-  if(!content_inp.value){
-    alert("Insira o conteudo no input")
-  }else{
-    const con = new Converter(content_inp.value,tittles)
+    const con = new Converter(window.prompt("Insira o conteudo aqui"),tittles)
     const exit = document.getElementById("exit")
-    exit.innerHTML = con.contentBack + con.EndContent
-  }
+    //exit.innerHTML = con.contentBack + con.EndContent
+    //copiar para a area de transferencia
+    const all = con.contentBack + con.EndContent
+    alert(all)
+    exit.innerText = all
+
 })
 //----------------------------------------------------
 class Converter {

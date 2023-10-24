@@ -41,6 +41,7 @@ button{
     width: 100px;
     border: none;
     border-radius: 10px;
+    margin: 5px;
 }
 button:hover{
     background-color: #d80637;
@@ -59,7 +60,7 @@ main{
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: row;
+    flex-direction: column;
     text-align: center;
 }
 #div_form{
@@ -75,7 +76,8 @@ main{
     flex-direction: column;
 }
 #div_exit{
-    width: 400px;
+   text-align: left;
+   width: 500px;
     border: 1px solid black;
     padding: 10px;
     height: 50vh;
@@ -87,4 +89,20 @@ main{
     padding: 0;
     margin: 10px;
     border: 1px solid #d80637;
+}
+#btn{
+    width: 350px;
+    height: 30px;
+}
+.row{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+p{
+    margin: 5px;
+}
+#r{
+    border-radius: 100px;
 }
