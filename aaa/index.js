@@ -30,12 +30,14 @@ btnAddTitle.addEventListener("click",()=>{
 //----------------------------------------------------
 const btn = document.getElementById("btn")
 btn.addEventListener("click",()=>{
-    const con = new Converter(window.prompt("Insira o conteudo aqui"),tittles)
+    const textArea = document.getElementById("txt")
+    const con = new Converter(textArea.value,tittles)
     const exit = document.getElementById("exit")
     //exit.innerHTML = con.contentBack + con.EndContent
     //copiar para a area de transferencia
     const all = con.contentBack + con.EndContent
-    alert(all)
+   //alert(all)
+    textArea.innerText = all
     exit.innerText = all
 
 })
